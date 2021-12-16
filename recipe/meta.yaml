@@ -1,5 +1,5 @@
 {% set name = "findimports" %}
-{% set version = "1.5.2" %}
+{% set version = "2.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: fab9ddfe120374aa68196266dc657ea9dd7531766889718943a07897f03f2fda
+  sha256: d47a1303e35095017c5e1da15305ae799510e72a1094101afed0c6f31a4e57cd
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -25,14 +25,14 @@ test:
   imports:
     - findimports
   commands:
-    - "findimports -h"
+    - findimports -h
 
 about:
   home: https://github.com/mgedmin/findimports
   license: GPL-2.0-or-later
   license_family: GPL
   license_file: LICENSE
-  summary: 'Python module import analysis tool'
+  summary: Python module import analysis tool
 
   # The remaining entries in this section are optional, but recommended.
   description: |
