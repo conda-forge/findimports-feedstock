@@ -13,6 +13,7 @@ import platform
 def setup_environment(ns):
     os.environ["CONFIG"] = ns.config
     os.environ["UPLOAD_PACKAGES"] = "False"
+
     if ns.debug:
         os.environ["BUILD_WITH_CONDA_DEBUG"] = "1"
         if ns.output_id:
@@ -21,6 +22,7 @@ def setup_environment(ns):
         os.environ["MINIFORGE_HOME"] = os.path.join(
             os.path.dirname(__file__), "miniforge3"
         )
+
 
 
 def run_docker_build(ns):
