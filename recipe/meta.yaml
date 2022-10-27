@@ -1,5 +1,5 @@
 {% set name = "findimports" %}
-{% set version = "2.2.0" %}
+{% set version = "2.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d47a1303e35095017c5e1da15305ae799510e72a1094101afed0c6f31a4e57cd
+  sha256: 8247458f800cbad659d42b725be2c11ce475c34a423f7da8ccfe90f1daa82dff
 
 build:
   noarch: python
