@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/findimports-fee
 
 Home: https://github.com/mgedmin/findimports
 
-Package license: GPL-2.0-or-later
+Package license: MIT
 
 Summary: Python module import analysis tool
 
